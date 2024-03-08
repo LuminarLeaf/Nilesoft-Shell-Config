@@ -16,10 +16,10 @@
 		item(title='build debug' cmd-line='/K dotnet build')
 		item(title='build release' cmd-line='/K dotnet build -c release /p:DebugType=None')
 
-		menu(mode="multiple" sep="both" title='publish' image=\ue11f)
+		menu(mode="multiple" sep=sep.both title='publish' image=\ue11f)
 		{
 			$publish='dotnet publish -r win-x64 -c release --output publish /*/p:CopyOutputSymbolsToPublishDirectory=false*/'
-			item(title='publish sinale file' sep="after" cmd-line='/K @publish --no-self-contained /p:PublishSingleFile=true')
+			item(title='publish sinale file' sep=sep.bottom cmd-line='/K @publish --no-self-contained /p:PublishSingleFile=true')
 			item(title='framework-dependent deployment' cmd-line='/K @publish')
 			item(title='framework-dependent executable' cmd-line='/K @publish --self-contained false')
 			item(title='self-contained deployment' cmd-line='/K @publish --self-contained true')

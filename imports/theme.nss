@@ -1,25 +1,26 @@
 ﻿theme
 {
-	name="modern"
-	dark=auto
+	name = "modern"
+	dark = auto
 	background
 	{
-		color=auto
-		opacity=0
-		effect=[3, auto, 10]
+		color = auto
+		opacity = 0
+		effect = [3, auto, 10]
 	}
-
-	image{
-		align=2	
-		// colors : [ main, accent, idk was on site so i added to test ]
+	image
+	{
+		align = 2
 		color = [auto, color.accent, auto]
 	}
-	
+
 	font
 	{
 		name = "Inter"
 	}
 
-	separator.margin.left=10
-	separator.margin.right=10
+	separator{
+		margin.left = 10
+		margin.right = 10
+	}
 }
