@@ -24,10 +24,6 @@ menu(mode="multiple" title=title.more_options image=icon.more_options)
 import 'imports/terminal.nss'
 import 'imports/file-manage.nss'
 
-menu(where=(sel.count>0 or wnd.is_desktop) type='*' mode="multiple" title='Utilities' image=icon.more_options)
-{
-}
-
 import 'imports/develop.nss'
 import 'imports/goto.nss'
 import 'imports/taskbar.nss'

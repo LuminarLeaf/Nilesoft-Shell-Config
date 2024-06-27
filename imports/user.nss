@@ -8,52 +8,27 @@ modify(
 	menu="develop")
 
 modify(
-	find="vlc"
-	menu=title.more_options)
-
-modify(
 	where=this.name=="Open with"
 	pos=1)
 
-// utilities
 modify(
-	where=this.name=="WizTree"
-	menu="Utilities"
-)
+	find='vlc|WizTree|Open Alacritty here| Scan with Microsoft Defender|Edit with|TeraCopy|Rename with PowerRename|Open with Sublime Text'
+	menu=title.more_options)
 
 modify(
-	find="Open with Code"
-	menu="Utilities"
-)
-
-modify(
-	find="Scan with Microsoft Defender"
-	menu="Utilities"
-)
-
-modify(
-	where=this.name=="PowerRename"
-	menu="Utilities"
-)
-
-modify(
-	where=this.name=="WinRAR"
-	menu="Utilities"
-)
-
-modify(
-	find="Edit with"
-	menu="Utilities"
-)
-
-modify(
-	find="TeraCopy"
-	menu="Utilities"
+	mode=mode.multiple
+	where=( this.name=="PowerRename" || this.name=="WinRAR" )
+	menu=title.more_options
 )
 
 modify(
 	find="New folder with selection"
 	menu="file manage"
+)
+
+modify(
+	find="Open with Code"
+	image = \uE272
 )
 
 // TODO: file options in one line like default windows 11 context menu
