@@ -8,6 +8,12 @@
 		opacity = 0
 		effect = [3, auto, 10]
 	}
+
+	item
+	{
+		prefix = 1
+	}
+
 	image
 	{
 		align = 2
